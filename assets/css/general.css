@@ -88,3 +88,32 @@ h1 {
 #botton-cerrar-cookies {
     justify-self: flex-end;
 }
+#rihanna-cookie {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    height: 216%;
+    left: -0px;
+}
+#rihanna-cookie.andando {
+    animation: andar .5s ease-in-out infinite, goToCookie 2s linear forwards;
+}
+@keyframes andar {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 6px;
+    }
+}
+@keyframes goToCookie {
+    0%{
+        left: -0px;
+    }
+    100%{
+        left: -107px;
+    }
+}
+#icono-cookie{
+    position: relative;
+}
