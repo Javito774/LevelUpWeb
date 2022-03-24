@@ -15,6 +15,7 @@ body{
     height: 100vh;
     gap: 30px;
     grid-auto-rows: min-content;
+    padding: 0 24px;
 }
 h1 {
     font-family: 'Pacifico', cursive;
@@ -56,7 +57,7 @@ h1 {
     bottom: 60px;
     right: 30px;
     grid-template-columns: 1fr auto;
-    max-width: 437px;
+    max-width: min(437px,calc(100% - 60px));
     background: #fff;
     justify-content: space-between;
     padding: 12px 20px;
