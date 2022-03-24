@@ -64,14 +64,14 @@
     function comerGalleta(){
         console.log("comiendo");
         const rihanna = document.querySelector("#rihanna-cookie");
-        rihanna.src = './assets/img/rihanna-cerrada-cropped.png';
+        rihanna.src = './assets/img/rihanna-cerrada.webp';
         let i = 0;
         let intervalo = setInterval(()=>{
             i++;
             if(i%2 === 0)
-                rihanna.src = './assets/img/rihanna-abierta-cropped.png';
+                rihanna.src = './assets/img/rihanna-abierta.webp';
             else
-                rihanna.src = './assets/img/rihanna-cerrada-cropped.png';
+                rihanna.src = './assets/img/rihanna-cerrada.webp';
             if (i === 9)
                 clearInterval(intervalo);
         },200);
