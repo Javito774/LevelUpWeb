@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../img/Rectangle 1.svg");
+    background-repeat: repeat;
+    background-color: #B9C6FF;
+    background-size: 55px;
+}
+.main-banner{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    gap: 30px;
+    grid-auto-rows: min-content;
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 60pt;
+    padding: 20px 40px;
+    background: #ffffff;
+    border: 9px solid;
+    align-self: center;
+    justify-self: center;
+    text-shadow: 6px 6px #7586cb;
+    color: #000000;
+    box-shadow: 15px 15px;
+    margin-top: 12%;
+}
+p {
+    font-family: monospace;
+    animation: blink 1.5s 1s ease-in-out forwards infinite alternate;
+}
+.contenedor-comming {
+    font-size: 20pt;
+    align-self: center;
+    justify-self: center;
+    background: #FF9F1F;
+    border: 4px solid;
+    padding: 8px 20px;
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
