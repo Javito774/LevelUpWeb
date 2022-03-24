@@ -35,8 +35,8 @@
 
         document.querySelector("#cookies-disclimer button").addEventListener('click',aceptarCookies);
         function aceptarCookies(){
-            //setCookie("AceptarCookies", true);
-            //aniadirGoogleAnalythics();
+            setCookie("AceptarCookies", true);
+            aniadirGoogleAnalythics();
             sacarRihanna();
         }
 
