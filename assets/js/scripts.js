@@ -24,8 +24,7 @@
         }
         return undefined;
     }
-    console.log(getCookie("AceptarCookies"));
-    if (getCookie("AceptarCookies") !== undefined) {
+    if (getCookie("AceptarCookies") === undefined) {
         mostrarCookies();
     }
     else if(getCookie("AceptarCookies") === true) {
