@@ -29,7 +29,7 @@ h1 {
     box-shadow: 15px 15px;
     margin-top: 12%;
 }
-p {
+.contenedor-comming p {
     font-family: monospace;
     animation: blink 1.5s 1s ease-in-out forwards infinite alternate;
 }
@@ -48,4 +48,43 @@ p {
     100% {
         opacity: 1;
     }
+}
+#cookies-disclimer {
+    display: none;
+    font-family: monospace;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    grid-template-columns: 1fr auto;
+    max-width: 437px;
+    background: #fff;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border: 4px solid;
+    gap: 10px;
+}
+#cookies-disclimer.show{
+    display: grid;
+    animation: left .5s 1ms ease-in-out forwards;
+}
+@keyframes left {
+    0%{
+        right: -10px;
+        opacity: 0;
+    }
+    100%{
+        right: 30px;
+        opacity: 1;
+    }
+}
+#cookies-disclimer button{
+    font-family: monospace;
+    align-self: flex-end;
+    padding: 6px 12px;
+    background: #FFA3D7;
+    border: 3px solid;
+
+}
+#botton-cerrar-cookies {
+    justify-self: flex-end;
 }
