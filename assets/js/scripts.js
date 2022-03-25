@@ -35,7 +35,7 @@
 
         document.querySelector("#cookies-disclimer button").addEventListener('click',aceptarCookies);
         function aceptarCookies(){
-            setCookie("AceptarCookies", true);
+            setCookie("AceptarCookies", true,365);
             aniadirGoogleAnalythics();
             sacarRihanna();
         }
@@ -62,7 +62,6 @@
         },700);
     }
     function comerGalleta(){
-        console.log("comiendo");
         const rihanna = document.querySelector("#rihanna-cookie");
         rihanna.src = './assets/img/rihanna-cerrada.webp';
         let i = 0;
