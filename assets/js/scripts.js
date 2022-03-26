@@ -88,4 +88,10 @@
         gtag('js', new Date());
         gtag('config', 'G-PJXHCNPXRM');
     }
+
+    document.querySelector("#botton-cerrar-banner").addEventListener('click',cerrarBanner);
+    function cerrarBanner() {
+        document.querySelector("#banner").classList.remove("show");
+    }
+
 }();

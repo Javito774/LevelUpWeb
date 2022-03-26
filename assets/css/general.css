@@ -12,6 +12,28 @@ body{
     padding-bottom: 60px;
     max-height: 100vh;
 }
+#banner.show{
+    display: grid;
+}
+#banner{
+    display: none;
+    grid-template-columns: 1fr auto;
+    position: fixed;
+    width: calc(100% - 40px);
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+    background: #fff;
+    border: 5px solid;
+    padding: 6px 20px;
+    font-family: monospace;
+    font-size: 13pt;
+    flex-wrap: nowrap;
+    font-weight: bold;
+}
+#banner p{
+    white-space: nowrap;
+}
 .main-banner{
     display: grid;
     width: 100vw;
@@ -189,4 +211,33 @@ h2 {
 .nombre-evento {
     font-size: 20pt;
     font-weight: bold;
+}
+.contenedor-texto {
+    overflow: hidden;
+}
+.contenedor-movimiento{
+    display: flex;
+    gap: 30px;
+}
+#banner.show .contenedor-movimiento {
+    animation: mover-banner 30s linear infinite;
+}
+.contenedor-parrafo {
+    display: flex;
+    gap: 10px;
+}
+
+.banera-ucrania {
+    height: 100%;
+    display: grid;
+    width: 30px;
+    border: 2px solid;
+}
+@keyframes mover-banner {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-108%);
+    }
 }
