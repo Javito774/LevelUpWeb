@@ -20,6 +20,7 @@ body{
     grid-template-columns: 1fr auto;
     position: fixed;
     width: calc(100% - 40px);
+    max-width: 1024px;
     justify-content: space-between;
     margin: 20px;
     align-items: center;
@@ -53,7 +54,7 @@ h1 {
     text-shadow: 6px 6px #7586cb;
     color: #000000;
     box-shadow: 15px 15px;
-    margin-top: 12%;
+    margin-top: max(12%, 80px);
     cursor: pointer;
     user-select: none;
 }
@@ -218,13 +219,18 @@ h2 {
 .contenedor-movimiento{
     display: flex;
     gap: 30px;
+    width: 400%;
 }
 #banner.show .contenedor-movimiento {
-    animation: mover-banner 30s linear infinite;
+    animation: mover-banner 20s linear infinite;
+}
+#banner.show:hover .contenedor-movimiento{
+    animation: mover-banner 50s linear infinite;
 }
 .contenedor-parrafo {
     display: flex;
     gap: 10px;
+    width: 100%;
 }
 
 .banera-ucrania {
@@ -238,6 +244,6 @@ h2 {
         transform: translateX(0%);
     }
     100%{
-        transform: translateX(-108%);
+        transform: translateX(-75%);
     }
 }
